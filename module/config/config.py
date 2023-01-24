@@ -2,7 +2,7 @@ import json
 import sys
 import pandas as pd
 
-from encryption.crypto_pass_phase import CryptoPassPhase
+from module.encryption.crypto_pass_phase import CryptoPassPhase
 
 
 class ConfigParser:
