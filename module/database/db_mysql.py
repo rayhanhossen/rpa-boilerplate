@@ -1,21 +1,19 @@
 import mysql.connector
-from logger import Logger
 from mysql.connector import Error
 
-from module.config.config import ConfigParser
+from helper.common_class_instance import CommonClassInstance
 
 # instance of other class
-logger = Logger.get_instance()
-config = ConfigParser().get_config()
+common_cls_ins = CommonClassInstance.get_instance()
 
 
 class MySQLDatabase:
     def __init__(self):
-        self.host = config.mysql_db_host
-        self.database = config.mysql_db_name
-        self.port = int(config.mysql_db_port)
-        self.username = config.mysql_db_username
-        self.password = config.mysql_db_password
+        self.host = common_cls_ins.config.get("mysql_db_host")
+        self.database = common_cls_ins.config.get("mysql_db_name")
+        self.port = int(common_cls_ins.config.get("mysql_db_port"))
+        self.username = common_cls_ins.config.get("mysql_db_username")
+        self.password = common_cls_ins.config.get("mysql_db_password")
         self.connection = None
 
     def connect(self):

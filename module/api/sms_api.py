@@ -1,20 +1,17 @@
 import ssl
 import urllib
 
-from logger import Logger
-
-from module.config.config import ConfigParser
+from helper.common_class_instance import CommonClassInstance
 
 # instance of other class
-logger = Logger.get_instance()
-config = ConfigParser().get_config()
+common_cls_ins = CommonClassInstance.get_instance()
 
 
 class SmsAPI:
     def __init__(self):
-        self.sms_api_url = config.sms_api_url
-        self.username = config.sms_api_username
-        self.password = config.sms_api_password
+        self.sms_api_url = common_cls_ins.config.get("sms_api_url")
+        self.username = common_cls_ins.config.get("sms_api_username")
+        self.password = common_cls_ins.config.get("sms_api_password")
 
     def send(self, msisdn, msg):
         try:
@@ -26,6 +23,6 @@ class SmsAPI:
             response = str(response)
             response = response.strip("b'")
             print(f'Response - {response}')
-            logger.log_info(f'Response - {response}')
+            common_cls_ins.logger.log_info(f'Response - {response}')
         except Exception as e:
-            logger.log_error(exception=e)
+            common_cls_ins.logger.log_error(exception=e)
