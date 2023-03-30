@@ -23,6 +23,6 @@ class SmsAPI:
             response = str(response)
             response = response.strip("b'")
             print(f'Response - {response}')
-            common_cls_ins.logger.log_info(f'Response - {response}')
+            common_cls_ins.logger.log_info(msg=f'Response - {response}')
         except Exception as e:
             common_cls_ins.logger.log_error(exception=e)

@@ -7,5 +7,10 @@
   "mysql_db_name": "test_db",
   "mysql_db_port": "3306",
   "mysql_db_username": "root",
-  "mysql_db_password": ""
+  "mysql_db_password": "",
+  "oracle_db_host": "localhost",
+  "oracle_db_name": "test_db",
+  "oracle_db_port": "3306",
+  "oracle_db_username": "root",
+  "oracle_db_password": ""
 }
