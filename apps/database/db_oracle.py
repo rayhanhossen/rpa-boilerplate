@@ -1,6 +1,6 @@
 import cx_Oracle
 
-from helper.common_class_instance import CommonClassInstance
+from apps.helper.common_class_instance import CommonClassInstance
 
 # instance of other class
 common_cls_ins = CommonClassInstance.get_instance()

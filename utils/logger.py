@@ -1,7 +1,7 @@
 import logging
 import traceback
 from datetime import datetime
-from modules.config.config import ConfigParser
+from utils.config import ConfigParser
 
 # class instance
 config = ConfigParser().get_config()

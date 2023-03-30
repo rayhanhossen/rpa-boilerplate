@@ -1,7 +1,7 @@
 import mysql.connector
 from mysql.connector import Error
 
-from helper.common_class_instance import CommonClassInstance
+from apps.helper.common_class_instance import CommonClassInstance
 
 # instance of other class
 common_cls_ins = CommonClassInstance.get_instance()

@@ -1,6 +1,6 @@
 from utils.logger import Logger
 
-from modules.config.config import ConfigParser
+from utils.config import ConfigParser
 
 
 class CommonClassInstance:

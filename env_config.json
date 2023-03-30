@@ -1,5 +1,5 @@
 {
-  "log_dir_path": "../app_logs",
+  "log_dir_path": "../logs",
   "sms_api_url": "",
   "sms_api_username": "",
   "sms_api_password": "",

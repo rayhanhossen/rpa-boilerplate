@@ -1,7 +1,7 @@
 import paramiko
 
-from helper.common_class_instance import CommonClassInstance
-from modules.remote_server.remote_connect import RemoteServerConnection
+from apps.helper.common_class_instance import CommonClassInstance
+from apps.remote_server.remote_connect import RemoteServerConnection
 
 # instance of other class
 common_cls_ins = CommonClassInstance.get_instance()
