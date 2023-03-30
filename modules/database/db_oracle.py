@@ -9,13 +9,13 @@ common_cls_ins = CommonClassInstance.get_instance()
 class OracleDatabase:
     def __init__(self):
         try:
-            # print("Loading Database Configuration Files....")
+            print("Loading Database Configuration Files....")
             common_cls_ins.logger.log_info(msg="Loading Database Configuration Files....")
-            self.db_host = common_cls_ins.config.get("dbHost", "")
-            self.db_port = common_cls_ins.config.get("", "")
-            self.db_service_name = common_cls_ins.config.get("", "")
-            self.db_user = common_cls_ins.config.get("", "")
-            self.db_password = common_cls_ins.config.get("", "")
+            self.db_host = common_cls_ins.config.get("oracle_db_host", "")
+            self.db_service_name = common_cls_ins.config.get("oracle_db_name", "")
+            self.db_port = common_cls_ins.config.get("oracle_db_port", "")
+            self.db_user = common_cls_ins.config.get("oracle_db_username", "")
+            self.db_password = common_cls_ins.config.get("oracle_db_password", "")
             self._conn = None
             self._cursor = None
         except Exception as e:

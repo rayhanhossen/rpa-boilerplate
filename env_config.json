@@ -12,5 +12,8 @@
   "oracle_db_name": "test_db",
   "oracle_db_port": "3306",
   "oracle_db_username": "root",
-  "oracle_db_password": ""
+  "oracle_db_password": "",
+  "sftp_server_host": "",
+  "sftp_server_username": "",
+  "sftp_server_password": ""
 }
