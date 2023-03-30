@@ -1,7 +1,7 @@
 import json
 import sys
 
-from module.encryption.crypto_pass_phase import CryptoPassPhase
+from modules.encryption.crypto_pass_phase import CryptoPassPhase
 
 
 class ConfigParser:
