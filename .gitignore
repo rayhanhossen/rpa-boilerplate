@@ -4,3 +4,5 @@
 /build/
 /process_files/
 /webdrivers/drivers/
+**/__pycache__/
+/app_logs/

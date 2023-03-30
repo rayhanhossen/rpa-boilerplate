@@ -1,0 +1,10 @@
+{
+  "sms_api_url": "",
+  "sms_api_username": "",
+  "sms_api_password": "",
+  "mysql_db_host": "",
+  "mysql_db_name": "",
+  "mysql_db_port": "",
+  "mysql_db_username": "",
+  "mysql_db_password": ""
+}
