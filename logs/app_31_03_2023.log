@@ -1,0 +1,20 @@
+2023-03-31 00:06:18,419 - logger - INFO - Response - Reyhan
+2023-03-31 02:21:58,591 - logger - INFO - test
+2023-03-31 02:34:18,593 - utils.logger - ERROR - Traceback (most recent call last):
+  File "D:\CSE Zone\Programming zone\PROJECT\Python\rpa-boilerplate\module\api\sms_api.py", line 19, in send
+    msg = urllib.parse.quote_plus(msg, encoding='UTF-8')
+AttributeError: module 'urllib' has no attribute 'parse'
+
+2023-03-31 02:34:18,593 - utils.logger - WARNING - module 'urllib' has no attribute 'parse'
+2023-03-31 02:35:11,748 - utils.logger - ERROR - Traceback (most recent call last):
+  File "D:\CSE Zone\Programming zone\PROJECT\Python\rpa-boilerplate\module\api\sms_api.py", line 19, in send
+    msg = urllib.parse.quote_plus(msg, encoding='UTF-8')
+AttributeError: module 'urllib' has no attribute 'parse'
+
+2023-03-31 02:35:11,748 - utils.logger - WARNING - module 'urllib' has no attribute 'parse'
+2023-03-31 02:39:05,204 - utils.logger - ERROR - Traceback (most recent call last):
+  File "D:\CSE Zone\Programming zone\PROJECT\Python\rpa-boilerplate\module\api\sms_api.py", line 19, in send
+    msg = urllib.parse.quote_plus(msg, encoding='UTF-8')
+AttributeError: module 'urllib' has no attribute 'parse'
+
+2023-03-31 02:39:05,204 - utils.logger - WARNING - module 'urllib' has no attribute 'parse'
